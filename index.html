@@ -76,7 +76,8 @@
         // Nếu key hợp lệ, hiển thị thông báo và chuyển trang sau 2 giây
         errorMsg.textContent = ""; // Xóa thông báo lỗi nếu key đúng
         setTimeout(function() {
-          window.location.href = "Site.html"; // Chuyển hướng đến trang home.html
+          window.location.replace("main/Site.html");
+; // Chuyển hướng đến trang home.html
         }, 2000); // 2 giây sau khi login thành công
       } else {
         errorMsg.textContent = "KEY không đúng!";
